@@ -1,0 +1,59 @@
+.explore {
+    max-width: 1280px;
+    margin: 80px auto;
+    padding: 0 80px;
+}
+.explore-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+.explore-sellers {
+    display: flex;
+    gap: 24px;
+}
+.explore-sellers a {
+    position: relative;
+    flex: 1;
+    text-decoration: none;
+    overflow: hidden;
+}
+.explore-sellers img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 2px;
+    transition: opacity 0.3s ease;
+}
+
+.explore-sellers a:hover img {
+    opacity: 1;
+}
+.explore-sellers a p {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+}
+
+.explore-sellers a p::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(120, 0, 30);
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.explore-sellers a:hover p::after {
+    transform: scaleX(1);
+}
