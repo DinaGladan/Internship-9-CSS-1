@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="navigation_style.css">
     <link rel="stylesheet" href="header_style.css">
     <link rel="stylesheet" href="highlights_style.css">
+    <link rel="stylesheet" href="hero_style.css">
 </head>
 <body>
     <div class = "marquee">
@@ -129,6 +130,39 @@
         </div>
     </section>
 
+    <div class = "page-container">
+        <section class="hero">
+            <input type="radio" name="hero" id="slide1" checked>
+            <input type="radio" name="hero" id="slide2">
+            <div class="hero-slides">
+                <div class="hero-slide slide-1">
+                    <div class="hero-content">
+                        <h1>Hasami Porcelain</h1>
+                        <a href="https://www.muji.eu" class="hero-link">Explore the collection -></a>
+                    </div>
+
+                    <label for="slide2" class="hero-arrow left"><</label>
+                    <label for="slide2" class="hero-arrow right">></label>
+                </div>
+
+                <div class="hero-slide slide-2">
+                    <div class="hero-content">
+                        <h1>Winter Essentials</h1>
+                        <div class="hero-links">
+                            <a href="https://www.muji.eu/women">Women -></a>
+                            <a href="https://www.muji.eu/men">Men -></a>
+                        </div>
+                    </div>
+
+                    <!-- arrows -->
+                    <label for="slide1" class="hero-arrow left"><</label>
+                    <label for="slide1" class="hero-arrow right">></label>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    
 
 </body>
 </html>

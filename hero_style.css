@@ -1,0 +1,99 @@
+
+.page-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.hero {
+  padding-top: 50px;
+  position: relative;
+  overflow: hidden;
+  height: 520px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.hero input {
+  display: none;
+}
+
+.hero-slides {
+  display: flex;
+  width: 200%;
+  height: 100%;
+}
+
+.hero-slide {
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.slide-1 {
+  background-image: url("https://cdn11.bigcommerce.com/s-4b0oh2xvlj/images/stencil/original/image-manager/25aw-winter-essentials-main-1920x912.jpg?t=1765465135");
+}
+
+.slide-2 {
+  background-image: url("https://cdn11.bigcommerce.com/s-4b0oh2xvlj/images/stencil/original/image-manager/26ss-hasami-tableware-1920x912-01.jpg?t=1768234142");
+}
+
+.hero-content {
+  color: white;
+  margin-left: 80px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.hero-link,
+.hero-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+.hero-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 32px;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  padding: 10px 16px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.hero:hover .hero-arrow {
+  opacity: 0.9;
+}
+
+.hero-arrow:hover {
+  opacity: 1.2;
+}
+
+.hero-arrow.left {
+  left: 0px;
+}
+
+.hero-arrow.right {
+  right: 0px;
+}
+
+#slide1:checked ~ .hero-slides {
+  transform: translateX(0);
+  animation: none;
+}
+
+#slide2:checked ~ .hero-slides {
+  transform: translateX(-50%);
+  animation: none;
+}
+
