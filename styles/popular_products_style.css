@@ -12,7 +12,7 @@
     margin-bottom: 32px;
 }
 
-.popular-products-items{
+.popular-products-items {
     display: flex;
     gap: 24px;
 }
@@ -36,22 +36,33 @@
 }
 
 .color-dots {
-  display: flex;
-  gap: 6px;
-  margin-top: 8px;
+    display: flex;
+    gap: 6px;
+    margin-top: 8px;
 }
 
 .dot {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  border: 1px solid #aaa;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid #aaa;
 }
 
-.black { background: #222; }
-.grey  { background: #777; }
-.beige { background: #d6c8b6; }
-.green {background: green;}
+.black {
+    background: #222;
+}
+
+.grey {
+    background: #777;
+}
+
+.beige {
+    background: #d6c8b6;
+}
+
+.green {
+    background: green;
+}
 
 .img1:hover {
     content: url("https://cdn11.bigcommerce.com/s-36unquhwg5/images/stencil/320w/products/10566/2560452/4550584950568_1260__19190.1758268840.jpg");
@@ -67,4 +78,35 @@
 
 .img4:hover {
     content: url("https://cdn11.bigcommerce.com/s-36unquhwg5/images/stencil/320w/products/11147/2569423/4550584957307_01_1260__56774.1758895313.jpg");
+}
+
+@media (max-width: 768px) {
+
+    .most-popular-products {
+        padding: 0 20px;
+        margin: 60px auto;
+    }
+
+    .most-popular-products h2 {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+
+    .popular-products-items {
+        flex-direction: column;
+    }
+
+    .most-popular-product {
+        flex: 1;
+    }
+
+    .most-popular-products-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .color-dots {
+        margin-top: 4px;
+    }
+
 }

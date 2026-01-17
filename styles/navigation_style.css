@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.marquee {
+    width: 100%;
+    height: 2rem;
+    font-size: 18px;
+    background-color: rgb(88, 88, 89);
+    padding-top: 8px;
+}
+
+.marquee a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.marquee a:hover {
+    text-decoration: underline;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 32px;
+    position: sticky;
+}
+
+.nav-top {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 4px;
+}
+
+.nav-title {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-icons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.nav-icons img,
+.nav-icons svg {
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.nav-icons img:hover,
+.nav-icons svg:hover {
+    opacity: 0.5;
+}
+
+.nav-title img {
+    width: 202px;
+    height: 2rem;
+    padding-top: 5px;
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(81, 38, 38);
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1);
+}
+
+@media (max-width: 768px) {
+    .marquee {
+        font-size: 14px;
+        height: auto;
+        padding: 6px 0;
+    }
+
+    .nav-top {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .nav-title {
+        order: -1;
+    }
+
+    .nav-title img {
+        width: 140px;
+    }
+
+    .nav-icons {
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .nav-links ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding-top: 12px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+}

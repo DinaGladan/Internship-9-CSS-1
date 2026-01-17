@@ -38,12 +38,13 @@
 .highlights-imgs a p {
     display: inline-block;
     position: relative;
-    
+
     font-size: 18px;
     font-weight: 600;
     color: rgb(81, 38, 38);
     margin: 12px 0 0;
 }
+
 .highlights-imgs a p::after {
     content: "";
     position: absolute;
@@ -62,3 +63,32 @@
     transform: scaleX(1);
 }
 
+@media (max-width: 768px) {
+
+    .highlights-header {
+        padding: 24px 20px 12px;
+    }
+
+    .highlights-header h2 {
+        font-size: 20px;
+    }
+
+    .highlights-imgs {
+        padding: 0 20px 16px;
+        gap: 14px;
+    }
+
+    .highlights-imgs a {
+        min-width: 240px;
+        max-width: 240px;
+    }
+
+    .highlights-imgs img {
+        height: 200px;
+    }
+
+    .highlights-imgs a p {
+        font-size: 16px;
+    }
+
+}
